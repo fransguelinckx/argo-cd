@@ -2489,6 +2489,8 @@ spec:
         - argocd-repo-server
         - --redis
         - argocd-redis:6379
+        - --repo-cache-expiration
+        - 3m
         image: argoproj/argocd:latest
         imagePullPolicy: Always
         livenessProbe:
